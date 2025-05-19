@@ -1,0 +1,4 @@
+@use "@/styles/abstracts/mixins" as *;
+.nav {
+  @include flex-center;
+}

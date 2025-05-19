@@ -1,0 +1,22 @@
+// Mixins reutilizables
+@use "variables" as *;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-left($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-custom($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
